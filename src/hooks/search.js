@@ -7,10 +7,10 @@ const API_KEY = '4d05574f';
 export const useSearch = (s) => {
   const [search, setSearch] = useState(s);
   const [{ data: page1, loading1, error1 }] = useAxios(
-    `${BASE_URL}?apikey=${API_KEY}&s=${search}&page=1`
+    `${BASE_URL}?apikey=${API_KEY}&type=movie&s=${search}&page=1`
   );
   const [{ data: page2, loading2, error2 }] = useAxios(
-    `${BASE_URL}?apikey=${API_KEY}&s=${search}&page=2`
+    `${BASE_URL}?apikey=${API_KEY}&type=movie&s=${search}&page=2`
   );
   return [
     {
