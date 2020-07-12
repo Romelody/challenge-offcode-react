@@ -12,7 +12,6 @@ export default () => {
   const searchMovies = () => setSearch(inputRef.current.value);
 
   const handleKeyDown = (event) => {
-    console.log('hola');
     if (event.key === 'Enter') {
       setSearch(inputRef.current.value);
     }
