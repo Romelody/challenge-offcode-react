@@ -3,7 +3,7 @@ import List from './List';
 import { useSearch } from '../hooks/search';
 
 export default () => {
-  const [{ data, loading, error }, setSearch] = useSearch('star');
+  const [{ data, loading, error }, setSearch] = useSearch('');
   const inputRef = useRef('');
 
   if (loading) return <p>Loading...</p>;
