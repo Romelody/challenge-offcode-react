@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useAxios from 'axios-hooks';
 
-const BASE_URL = 'http://www.omdbapi.com';
+const BASE_URL = 'https://www.omdbapi.com';
 const API_KEY = '4d05574f';
 
 export const useSearch = (s) => {
