@@ -7,7 +7,14 @@ export default ({ search }) => {
         <h3>{Title}</h3>
         <img src={Poster} alt={Title} />
         <p>
-          1988 - <a href="http://wwwimdb.com">VIEW ON IMDB</a>
+          1988 -
+          <a
+            href={`http://www.imdb.com/title/${imdbID}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            VIEW ON IMDB
+          </a>
         </p>
       </article>
     </div>
