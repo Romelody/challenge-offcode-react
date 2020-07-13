@@ -10,7 +10,7 @@ export default ({ imdbID, Title, Poster, Year }) => (
         <a
           href={`http://www.imdb.com/title/${imdbID}`}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           View on IMDB
         </a>
