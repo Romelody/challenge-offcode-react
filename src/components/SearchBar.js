@@ -3,7 +3,7 @@ import List from './List';
 import { useSearch } from '../hooks/search';
 
 export default () => {
-  const [{ data, loading, error }, setSearch] = useSearch('');
+  const [{ data, loading, error }, setSearch] = useSearch('star');
   const inputRef = useRef('');
 
   if (loading) return <p>Loading...</p>;
@@ -22,7 +22,7 @@ export default () => {
       <input
         className="input"
         type="text"
-        placeholder="Improve my style please"
+        placeholder="Search your movie!"
         name="searchTerm"
         ref={inputRef}
         onKeyDown={handleKeyDown}

@@ -1,68 +1,110 @@
+$green: #4cb59c;
+
 header{
-    position: absolute;
-    max-width: 60%;
-    top: 2em;
-    left: 2em;
-    border-bottom: 1px dashed #fff;
+  position: absolute;
+  max-width: 60%;
+  top: 2em;
+  left: 2em;
+  border-bottom: 1px dashed #fff;
+}
+
+main{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2{
+    font-size: 2em;
+    display: flex-row;
+    color: white;
+    margin-top: 60px;
   }
-  
-  main{
-    margin-top: 150px;
+
+  input{
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+  }
+  button{
+    width: auto;
+    background: $green;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      background: linear-gradient(45deg, rgba(43,96,83,1) 0%, rgba(2,0,36,1) 100%);
+    }
+  }
+
+  .list-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .results{
+    display: flex;
     align-items: center;
     justify-content: center;
-  
-    h2{
-      font-size: 2em;
-      display: flex-row;
-      color: #000;
-    }
-  
-    .searchForm{
-      // im ugly, make me and my siblings pretty
-      input{
-        width: 300px
-      }
-      button{
-        width: auto;
-      }
-    }
-  
-    .results{
+    margin-top: 40px;
+    
+    article{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      //im not responsive. Make me and my siblings work on all devices
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 1em;
+      background: #fff;
+      border-radius: 1em;
+      padding: 1.2em;
+      max-width: 250px;
+      height: 460px;
+      font-size: 1em;
 
-      article{
-        margin: 1em;
-        background: #fff;
-        border-radius: 1em;
-        padding: 1.2em;
-        p{
-          color: #000;
-        }
-        h3{
-          color: #000;
-          font-family: 'Roboto Condensed', sans-serif;
-          text-transform: uppercase;
-          margin-bottom: 0.3em;
-        }
-        img{
-          margin-bottom: 1em;
-          //I may have a variable aspect ratio. Make me responsive watever my size is.
-        }
-        a{
-          padding: 0.4em 0.6em;
-          background: #EA4A66;
-          color: #fff;
-          text-decoration: none;
-          //I dont have hover/focus effect. Give me some feedback for users.
-
+      p{
+        color: $green;
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+      }
+      h3{
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+      }
+      img{
+        margin-bottom: 1em;
+        margin-top: 1em;
+        border-radius: 16px;
+        height: 350px;
+        width: 100%;
+      }
+      a{
+        padding: 0.5em 1em;
+        background: $green;
+        border-radius: 25px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+    
+        &:hover{
+          background: linear-gradient(45deg, rgba(43,96,83,1) 0%, rgba(2,0,36,1) 100%);
         }
       }
+      .caption{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+      }
     }
-  
   }
+
+}

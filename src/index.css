@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 body{
-  background: linear-gradient(#98BCB2, #98BCB2);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(5,7,39,1) 59%, rgba(38,83,72,1) 100%);
+  width: 90%;
+  margin: 0 auto;
 }
-
+@media  (max-width: 800px){
+  body{
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(5,7,39,1) 90%, rgba(38,83,72,1) 100%);
+  }
+}
 h1, h2, h3{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Raleway', sans-serif;
   color:#fff;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -16,9 +23,8 @@ h1 span{
 }
 
 p{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color:#fff;
-  margin-top: 0em;
   span{
     color: #EA4A66;
   }
